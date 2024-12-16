@@ -33,23 +33,23 @@ body {
   .navbar-brand {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #fff;
+    color: rgb(207, 248, 26);
   }
   
   .nav-link {
     font-size: 1.0rem;
     margin-left: 20px;
-    color: #ffffff;
+    color: rgb(207, 248, 26);
     transition: color 0.2s ease;
   }
   
   .nav-link:hover {
-    color: #059814;
+    color: rgba(255, 0, 0, 0.8);
   }
   
   /* Hero Section Styles */
   .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
                 url('media/bg.jpg') no-repeat center center/cover;
     height: 100vh;
     color: white;
@@ -63,6 +63,7 @@ body {
   .hero h1 {
     font-size: 1.8rem;
     font-weight: bold;
+    
   }
   
   .hero p {
@@ -74,13 +75,13 @@ body {
   .hero .btn {
     padding: 10px 30px;
     font-size: 1.2rem;
-    background-color: rgb(25, 154, 25);
+    background-color: rgba(255, 0, 0, 0.8);
     border: none;
     transition: background-color 0.3s ease;
   }
   
   .hero .btn:hover {
-    background-color: green;
+    background-color: rgba(185, 2, 2, 0.745);
   }
  
   
@@ -131,6 +132,7 @@ body {
     margin-bottom: 20px;
     color: white;
   }
+  
   
   .about-section p {
     font-size: 1.1rem;
@@ -309,12 +311,14 @@ html {
   margin-bottom: 40px;
   font-size: 28px;
   text-align: left;
+  
 }
   }
   .menu-title {
     margin-bottom: 40px;
     font-size: 50px;
     text-align: left;
+    color: rgb(207, 248, 26);
   }
   
   .menu-item img {
@@ -333,6 +337,101 @@ html {
   }
   .menu-item p{
     color: black;
+    margin: 0;
+    padding: 0;
+    text-align: left;
   }
 
   
+
+  /* General body styles */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section headers */
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Menu section */
+.menu-section {
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-category {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Menu items container */
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual menu item */
+.menu-item {
+  background-color: #1a1a1a;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Menu item image */
+.menu-item img {
+  max-width: 100%; /* Ensure image fits within the container */
+  height: 210px; /* Fixed height for images */
+  object-fit: cover; /* Ensures image maintains aspect ratio and fills the space */
+  border-radius: 8px;
+}
+
+/* Menu item hover effect */
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.8);
+}
+
+/* Menu item title */
+.menu-item h5 {
+    color: rgba(255, 0, 0, 0.8);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    flex-shrink: 0; /* Ensures text doesn't stretch */
+}
+
+/* Menu item description */
+.menu-item p {
+  color: rgb(207, 248, 26);
+  font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-item {
+      width: 100%;
+  }
+}
+.nav-item{
+  size: 11110px;
+  color: rgb(207, 248, 26);
+}
